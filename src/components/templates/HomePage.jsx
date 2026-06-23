@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { getCoinList } from "../../services/CryptoApi";
 
-import TableCoin from "../modules/TableCoin";
+import { getCoinList } from "../../services/CryptoApi";
+import TableCoin from "../modules/Tablecoin";
 import Pagination from "../modules/Pagination";
 import Search from "../modules/Search";
 import Chart from "../modules/Chart";
@@ -25,12 +25,13 @@ function HomePage() {
         console.log(error);
       }
     };
+
     getData();
   }, [page, currency]);
   return (
     <div>
       <Search currency={currency} setCurrency={setCurrency} />
-      <TableCoin coins={coins} />
+      <TableCoin coins={coins} isLoading={isLoading} setChart={setChart} />
       <Pagination page={page} setPage={setPage} />
       {!!chart && <Chart chart={chart} setChart={setChart} />}
     </div>
