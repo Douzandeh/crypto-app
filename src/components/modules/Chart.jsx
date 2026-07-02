@@ -50,7 +50,7 @@ function Chart({ chart, setChart }) {
         <div className={styles.details}>
           <div>
             <p>Prices:</p>
-            <span>${chart.coin.current_price}</span>
+            <span>{currencySymbols[currency]}{chart.coin.current_price}</span>
           </div>
           <div>
             <p>ATH:</p>
