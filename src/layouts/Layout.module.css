@@ -1,5 +1,7 @@
 .header {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   align-items: center;
   justify-content: space-between;
   background-color: #3874ff;
@@ -21,4 +23,12 @@
   padding: 20px;
   margin-top: 80px;
   border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .header {
+    margin-bottom: 80px;
+    text-align: center;
+    justify-content: center;
+  }
 }

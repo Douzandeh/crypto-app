@@ -33,3 +33,17 @@
 .selected {
   background-color: #3874ff;
 }
+
+@media (max-width: 480px) {
+  .pagination {
+    width: 100%;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .pagination button {
+    width: 70px;
+    font-size: 0.9rem;
+  }
+}

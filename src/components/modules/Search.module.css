@@ -63,3 +63,24 @@
   width: 25px;
   height: 25px;
 }
+
+@media (max-width: 480px) {
+  .searchBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .searchBox input {
+    width: 100%;
+  }
+
+  .searchBox select {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .searchResult {
+    width: 100%;
+  }
+}

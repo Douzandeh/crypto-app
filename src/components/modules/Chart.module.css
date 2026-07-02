@@ -90,3 +90,22 @@
   color: #3874ff;
   font-weight: 700;
 }
+
+@media (max-width: 600px) {
+  .chart {
+    max-width: 95%;
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .types button {
+    margin: 6px 8px;
+    padding: 5px 8px;
+    font-size: 0.9rem;
+  }
+}
